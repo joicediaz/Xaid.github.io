@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Xaid</title>
+    <style>
+        body {
+            background-color: #fcf5e4;
+            color: #101010;
+            font-family: "Papyrus", Fantasy;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: "Courier New";
+            font-size: 25px;
+            position: absolute;
+            right: 150px;
+            left: 150px;
+            top: 190px;
+        }
+
+        .myDiv {
+            border: 25px outset;
+            background-color: #fcf5e4;
+            text-align: center;
+            padding: 40px;
+            margin-top: 5px;
+        }
+
+        .button {
+            margin: 20px;
+            padding: 15px 30px;
+            background-color:#c0c0c0;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        /* Position the logo in the top-left corner */
+        .logo {
+            position: absolute;
+            top: 62px;
+            left: 50px;
+            width: 115px;
+            height: auto;
+			
+			
+        }
+
+        h2 {
+            background-image: url('backimg.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        marquee {
+            font-size: 15px;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        h2.intro {
+            font-size: 20px;
+            color: black;
+            padding: 60px;
+            max-width: 900px;
+            margin: 30px auto;
+            border-radius: 50px;
+            font-family: "Papyrus", Fantasy;
+        }
+
+        /* Slideshow Styles */
+        .container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Removed caption container styling */
+        .caption-container {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Marquee text scrolling -->
+    <marquee behavior="scroll" direction="right" scrollamount="12">
+        Where The Limit in Beauty Does not Exist
+    </marquee>
+
+    <div class="myDiv">
+        <!-- Logo linked to homepage -->
+        <a href="Hpage.html">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+
+        <!-- Navigation Buttons -->
+        <div>
+            <a href="hair.html" class="button">Haircare</a>
+            <a href="skin.html" class="button">Skincare</a>
+            <a href="aboutus.html" class="button">About us</a>
+            <a href="contact.html" class="button">Contact</a>
+        </div>
+    </div>
+
+    <!-- Slideshow Container -->
+    <div class="container">
+        <div class="mySlides">
+            <img src="toolspic.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="spa.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="hair.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/Previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+
+    <!-- Slideshow Script -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <!-- Intro Text -->
+    <h2 class="intro">
+	Welcome to our community
+<br>
+<br>
+        Welcome to your ultimate destination for expert beauty tips, trends, and the best product recommendations! 
+Whether you're looking for skincare advice, haircare solutions, or the latest in beauty innovations, Beauty Index brings you everything you need to look and feel your best. Explore our carefully curated collections, discover new favorites, and stay up-to-date with the beauty world’s latest trends. Your journey to radiant beauty starts here!
+<br>
+    </h2>
+
+</body>
+</html>
+

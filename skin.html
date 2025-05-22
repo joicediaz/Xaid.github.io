@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skincare</title>
+  <style>
+    body {
+      font-family: "Papyrus", Fantasy;
+      margin: 0;
+      background-color: #fcf5e4;
+    }
+
+    .header {
+      padding: 95px;
+      text-align: center;
+      background: url('skin.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      font-size: 50px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 200px;
+      left: 50px;
+      width: 115px;
+      height: auto;
+    }
+
+    .skin-text {
+      position: absolute;
+      top: 20%;
+      left: 42%;
+      font-size: 55px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 35px;
+      font-family: "Papyrus", Fantasy;
+    }
+
+    table {
+      border: 8px solid black;
+      width: 50%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border: 8px solid black;
+    }
+
+    th {
+      background-color: #fcf5e4;
+    }
+
+    .link-cell {
+      background-color: #fcf5e4;
+      font-family: "Papyrus", Fantasy;
+      color: brown;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="skin-text">Skin Care</div>
+    <p>Glow from within!</p>
+  </div>
+
+  <div class="myDiv">
+    <!-- Logo linked to homepage -->
+    <a href="Hpage.html">
+      <img src="logo.png" alt="Logo" class="logo">
+    </a>
+  </div>
+
+  <div class="content">
+    <h1>SkinCare</h1>
+  </div>
+
+  <!-- Cleanser Table -->
+  <table>
+    <thead>
+      <tr bgcolor="#fcf5e4">
+        <td rowspan="4">
+          <img src="cleansers.jpg" width="375px" height="450px" alt="Facetoner img">
+        </td>
+        <td colspan="4" valign="top">
+          <h2>Cleanser</h2>
+          <h3>Cleansers are used to remove dirt, oil, makeup, and other impurities from the skin, ensuring a clean canvas for other skincare products. They are the first step in any skincare routine.</h3>
+        </td>
+      </tr>
+      <tr bgcolor="#fcf5e4" valign="bottom">
+        <td rowspan="5" class="link-cell">
+          <a href="cleansers.html" target="_top" style="color: brown;">Explore cleansers</a>
+        </td>
+      </tr>
+    </thead>
+  </table>
+
+  <!-- Toner Table -->
+  <table>
+    <thead>
+      <tr bgcolor="#fcf5e4">
+        <td rowspan="4">
+          <img src="Toners.jpg" width="375px" height="450px" alt="Toners">
+        </td>
+        <td colspan="4" valign="top">
+          <h2>Toner</h2>
+          <h3>Toners are used to balance the skin's pH, remove any remaining traces of dirt or oil, and prepare the skin for better absorption of serums and moisturizers.</h3>
+        </td>
+      </tr>
+      <tr bgcolor="#fcf5e4" valign="bottom">
+        <td rowspan="5" class="link-cell">
+          <a href="Toners.html" target="_top" style="color: brown;">Explore Toners</a>
+        </td>
+      </tr>
+    </thead>
+  </table>
+
+  <!-- Serum Table -->
+  <table>
+    <thead>
+      <tr bgcolor="#fcf5e4">
+        <td rowspan="4">
+          <img src="Faceserum.jpg" width="375px" height="450px" alt="Serum">
+        </td>
+        <td colspan="4" valign="top">
+          <h2>Serum</h2>
+          <h3>Serums are concentrated formulas designed to address specific skin concerns like wrinkles, dark spots, and hydration. They are typically applied after toning and before moisturizing.</h3>
+        </td>
+      </tr>
+      <tr bgcolor="#fcf5e4" valign="bottom">
+        <td rowspan="5" class="link-cell">
+          <a href="serums.html" target="_top" style="color: brown;">Explore Serums</a>
+        </td>
+      </tr>
+    </thead>
+  </table>
+
+  <!-- Moisturizer Table -->
+  <table>
+    <thead>
+      <tr bgcolor="#fcf5e4">
+        <td rowspan="4">
+          <img src="dryskin.jpg" width="375px" height="450px" alt="Dry Skin Care">
+        </td>
+        <td colspan="4" valign="top">
+          <h2>Moisturizer</h2>
+          <h3>Moisturizers hydrate the skin, improving its texture, elasticity, and overall appearance by preventing dryness and irritation.</h3>
+        </td>
+      </tr>
+      <tr bgcolor="#fcf5e4" valign="bottom">
+        <td rowspan="5" class="link-cell">
+          <a href="https://www.dryskincare.com" target="_top" style="color: brown;">Explore Moisturizers</a>
+        </td>
+      </tr>
+    </thead>
+  </table>
+
+</body>
+</html>
